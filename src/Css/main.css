@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.List-style {
+  list-style: none;
+  display: inline-block;
+}
+
+.Link-style {
+  text-decoration: none;
+  color: black;
+}
+
+.Header {
+  display: flex;
+  flex-direction: row;
+  background-color: #96ec96;
+}
+.Header__name {
+  flex-basis: 80%;
+  padding: 3%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  background-color: #8b8bd1;
+}
+.Header__navigation {
+  flex-grow: 1;
+  position: relative;
+  margin: auto;
+  text-align: center;
+}
+.Header__navigation i {
+  font-size: 4rem;
+}
+
+.Mobile-nav__button {
+  font-size: 5.5rem;
+}
+
+.Nav-list__list {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 80vw;
+  height: 100vh;
+  background-color: #ecd8ec;
+  padding-top: 35%;
+  line-height: 2.5;
+}
+.Nav-list__item {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+.Nav-list-offers__list {
+  display: flex;
+  flex-direction: column;
+}
+.Nav-list-offers__item {
+  font-size: 2rem;
+  font-weight: 300;
+  padding: 0 5%;
+}
+.Nav-list-offers__item:nth-last-child(1) {
+  line-height: 1.3;
+  color: red;
+}
+
+.Page {
+  flex-grow: 1;
+  background-color: #b58bb8;
+}
+.Page__activity {
+  padding: 5% 10%;
+}
+.Page__name {
+  font-size: 2.2rem;
+  padding: 2%;
+}
+
+.Home {
+  background-color: #7b7be0;
+}
+.Home__text-about-me {
+  line-height: 1.5;
+  font-size: 2rem;
+}
+
+.Offers__list {
+  line-height: 1.5;
+  padding: 0 2%;
+}
+.Offers__item {
+  display: flex;
+  align-items: baseline;
+  margin: 10px 0;
+}
+.Offers__icon {
+  flex-basis: 10%;
+  padding-right: 10px;
+}
+.Offers__text {
+  font-size: 1.8rem;
+}
+
+.Contact__list {
+  margin: 15px 0;
+  padding: 0 2%;
+}
+.Contact__item {
+  font-size: 2rem;
+  display: flex;
+  align-items: baseline;
+  margin: 20px 0;
+}
+.Contact__icon {
+  flex-basis: 10%;
+  font-size: 2rem;
+  margin-right: 5px;
+  text-align: center;
+}
+.Contact__text {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.Footer {
+  justify-content: flex-end;
+  background-color: lightgrey;
+}
+
+.Contact-footer__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 3%;
+  text-align: center;
+}
+.Contact-footer__telephone {
+  flex-basis: 25%;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 5px;
+}
+.Contact-footer__telephone i {
+  font-size: 5rem;
+}
+.Contact-footer__email {
+  flex-basis: 25%;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 5px;
+}
+.Contact-footer__email i {
+  font-size: 5rem;
+}
+.Contact-footer__address {
+  flex-basis: 25%;
+  border: 2px solid black;
+  border-radius: 10%;
+  padding: 5px;
+}
+.Contact-footer__address i {
+  font-size: 5rem;
+}
+
+/*# sourceMappingURL=main.css.map */

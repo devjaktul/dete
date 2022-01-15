@@ -1,0 +1,26 @@
+.Offers {
+    &__list {
+        line-height: 1.5;
+        // list-style-type: circle;
+        padding: 0 2%;
+    }
+
+    &__item {
+        display: flex;
+        align-items: baseline;
+        margin: 10px 0;
+        // font-size: 1.8rem;
+    }
+
+    &__icon {
+        flex-basis: 10%;
+        // font-size: 1.8rem;
+        padding-right: 10px;
+    }
+
+    &__text {
+        font-size: 1.8rem;
+        // padding: 2px;
+    }
+
+}

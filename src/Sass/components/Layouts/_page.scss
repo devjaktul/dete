@@ -1,0 +1,16 @@
+.Page {
+    flex-grow: 1;
+    // flex-basis: 10vh;
+    background-color: rgb(181, 139, 184);
+
+    &__activity {
+        padding: 5% 10%;
+    }
+
+    &__name {
+        font-size: 2.2rem;
+        padding: 2%;
+    }
+
+
+}
