@@ -5,29 +5,40 @@ import { faTools } from '@fortawesome/free-solid-svg-icons';
 
 const offersIcon = faTools;
 
+const items = [
+    {
+        id: 1,
+        icon: offersIcon,
+        text: "Wykonawstwo przyłączy wodociągowych",
+    },
+    {
+        id: 2,
+        icon: offersIcon,
+        text: "Wykonawstwo przyłączy kanalizacyjnych",
+    },
+];
+
+const Item = (props) => 
+    <li className='Offers__item'>
+        <FontAwesomeIcon
+            className='Offers__icon'
+            icon = {props.icon}
+        />
+        <p
+            className='Offers__text'
+        >
+            {props.text}
+        </p>
+    </li>
+
+const ItemList = items.map(item => <Item key = {item.id} icon = {item.icon} text = {item.text} />)
+
 const Connections = () => (
 
     <>
     <h2 className='Page__name'>Przyłącza WOD-KAN</h2>
     <ul className='Offers__list List-style'>
-        <li className='Offers__item'>
-            <FontAwesomeIcon 
-                icon = {offersIcon}
-                className='Offers__icon'
-            />
-            <p className='Offers__text'>
-                Wykonawstwo przyłączy wodociągowych
-            </p>
-        </li>
-        <li className='Offers__item'>
-            <FontAwesomeIcon 
-                icon = {offersIcon}
-                className='Offers__icon'
-            />
-            <p className='Offers__text'>
-                Wykonawstwo przyłączy kanalizacyjnych
-            </p>
-        </li>
+        {ItemList}
     </ul>
     </>
 )
