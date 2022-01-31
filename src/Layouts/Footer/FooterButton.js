@@ -9,7 +9,7 @@ const FooterButton = () => (
     <>
             <li className='Footer__button'>
                 <Link
-                to="/footer-contact"
+                to="/contact"
                 >
                 <FontAwesomeIcon
                     className='Footer__button-icon'

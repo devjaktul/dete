@@ -136,44 +136,29 @@
   text-align: center;
 }
 
-.Footer {
-  justify-content: flex-end;
-  background-color: lightgrey;
-}
-
-.Contact-footer__list {
+.Footer__list {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  padding: 3%;
-  text-align: center;
-}
-.Contact-footer__telephone {
-  flex-basis: 25%;
-  border: 2px solid black;
-  border-radius: 10%;
+  align-items: center;
   padding: 5px;
+  background-color: #d6cdcd;
 }
-.Contact-footer__telephone i {
-  font-size: 5rem;
+.Footer__copyright {
+  flex-basis: 80%;
+  display: flex;
+  padding-left: 5%;
 }
-.Contact-footer__email {
-  flex-basis: 25%;
-  border: 2px solid black;
-  border-radius: 10%;
-  padding: 5px;
+.Footer__copyright-icon {
+  font-size: 1.3rem;
+  margin: 2%;
 }
-.Contact-footer__email i {
-  font-size: 5rem;
+.Footer__copyright-text {
+  font-size: 1.3rem;
+  margin: 2% 0;
 }
-.Contact-footer__address {
-  flex-basis: 25%;
-  border: 2px solid black;
-  border-radius: 10%;
-  padding: 5px;
-}
-.Contact-footer__address i {
-  font-size: 5rem;
+.Footer__button-icon {
+  font-size: 6rem;
+  color: #5a5858;
+  margin: 5% 0 5% 15%;
 }
 
 /*# sourceMappingURL=main.css.map */
