@@ -11,22 +11,22 @@ const MobileNav = () =>{
     
     return (
     <>
-    <nav className='Mobile-nav'>
-<FontAwesomeIcon
-    icon = {icons}
-    className='Mobile-nav__button'
-    onClick={() => {
-        setShowMenu(!showMenu);
-        setIcons(showMenu ? faBars : faTimes);
-    }}
-/>
+        <nav className='Mobile-nav'>  
+            <FontAwesomeIcon
+                icon = {icons}
+                className='Mobile-nav__button'
+                onClick={() => {
+                    setShowMenu(!showMenu);
+                    setIcons(showMenu ? faBars : faTimes);
+                }}
+            />
 
-    {showMenu ? <NavList
-        closeMenu={()=> {
-            setShowMenu(false);
-            setIcons(showMenu ? faBars : faTimes);
-    }} /> : null}
-    </nav>
+                {showMenu ? <NavList
+                    closeMenu={()=> {
+                        setShowMenu(false);
+                        setIcons(showMenu ? faBars : faTimes);
+                }} /> : null}
+        </nav>
     </>
    
 )

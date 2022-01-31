@@ -5,10 +5,12 @@ import MobileNav from './Navigation/MobileNav';
 
 const Header = () => (
     <>
-    <h1 className='Header__name'>zakład usługowy "dete" dionizy turek</h1>
-    <nav className='Header__navigation'>
-    {<MobileNav/>}
-    </nav>
+    <div className='Header'>
+        <h1 className='Header__name'>zakład usługowy "dete" dionizy turek</h1>
+        <nav className='Header__navigation'>
+            {<MobileNav/>}
+        </nav>
+    </div>
     </>
 )
 

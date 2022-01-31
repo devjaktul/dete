@@ -24,57 +24,72 @@
 
 .Header {
   display: flex;
-  flex-direction: row;
+  width: 100vw;
+  height: 10vh;
   background-color: #96ec96;
 }
 .Header__name {
   flex-basis: 80%;
-  padding: 3%;
+  padding: 0 2%;
+  margin: auto;
   text-align: center;
   text-transform: uppercase;
   font-size: 2.2rem;
   background-color: #8b8bd1;
 }
 .Header__navigation {
-  flex-grow: 1;
   position: relative;
-  margin: auto;
-  text-align: center;
-}
-.Header__navigation i {
-  font-size: 4rem;
+  flex-basis: 20%;
 }
 
 .Mobile-nav__button {
   font-size: 5.5rem;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
 }
 
-.Nav-list__list {
+.Nav-list__bg {
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.Nav-list__list {
+  position: absolute;
   top: 0;
   left: 0;
   width: 80vw;
   height: 100vh;
   background-color: #ecd8ec;
-  padding-top: 35%;
   line-height: 2.5;
+  z-index: 1;
 }
 .Nav-list__item {
+  position: relative;
+  top: 20%;
+  text-align: center;
   font-size: 2.5rem;
   font-weight: 700;
+}
+.Nav-list__link {
+  font-size: 2.5rem;
 }
 .Nav-list-offers__list {
   display: flex;
   flex-direction: column;
 }
-.Nav-list-offers__item {
+.Nav-list-offers__link {
   font-size: 2rem;
   font-weight: 300;
   padding: 0 5%;
 }
-.Nav-list-offers__item:nth-last-child(1) {
+
+.Nav-lh {
   line-height: 1.3;
-  color: red;
 }
 
 .Page {
