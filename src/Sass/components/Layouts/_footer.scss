@@ -1,38 +1,33 @@
 .Footer {
+    padding: 5px 0;
+    background-color: rgb(236, 231, 231);
 
-    // flex-basis: 15%;
     &__list {
         display: flex;
         align-items: center;
-        padding: 5px;
-        background-color: rgb(214, 205, 205);
     }
 
     &__copyright {
         flex-basis: 80%;
         display: flex;
-        padding-left: 5%;
-        // background-color: darkkhaki;
 
         &-icon {
+            flex-basis: 10%;
             font-size: 1.3rem;
-            margin: 2%;
         }
 
         &-text {
+            flex-basis: 90%;
             font-size: 1.3rem;
-            margin: 2% 0;
         }
     }
 
     &__button {
-        // background-color: red;
-        // padding-left: 10%;
+        flex-basis: 20%;
 
         &-icon {
             font-size: 6rem;
             color: rgb(90, 88, 88);
-            margin: 5% 0 5% 15%;
         }
     }
 }
