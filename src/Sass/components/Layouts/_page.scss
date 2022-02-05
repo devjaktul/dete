@@ -1,7 +1,6 @@
 .Page {
     flex-grow: 1;
-    // flex-basis: 10vh;
-    background-color: rgb(181, 139, 184);
+    background-color: #f4f4f4;
 
     &__activity {
         padding: 5% 10%;
@@ -10,7 +9,17 @@
     &__name {
         font-size: 2.2rem;
         padding: 2%;
+
+        @include mq(smartphone) {
+            font-size: 2.4rem;
+        }
+
+        @include mq(smartphone-large) {
+            font-size: 2.6rem;
+        }
+
+        @include mq(smartphone-large) {
+            font-size: 2.8rem;
+        }
     }
-
-
 }

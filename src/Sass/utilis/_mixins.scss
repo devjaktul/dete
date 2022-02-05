@@ -1,0 +1,27 @@
+@mixin mq($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @if($size) {
+        @media #{$size} {
+            @content;
+        }
+    }
+
+    @else {
+        @error '"#{$breakpoint}" - Nie ma takiej wielkości';
+    }
+}
+
+@mixin mq-landscape($breakpoint) {
+    $size: map-get($breakpoints, $breakpoint);
+
+    @if($size) {
+        @media #{$size} and (orientation: landscape) {
+            @content;
+        }
+    }
+
+    @else {
+        @error '"#{$breakpoint}" - Nie ma takiej wielkości';
+    }
+}

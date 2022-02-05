@@ -9,76 +9,82 @@ const NavList = (props) => {
 
 return (
     <>
-    <div className='Nav-list__bg'>
-        <ul className='Nav-list__list List-style'>
-            <li className='Nav-list__item'>
-                <Link
-                    to="/" 
-                    className='Nav-list__link Link-style'
-                    onClick={props.closeMenu}
-                >
-                    Home
-                </Link>
-            </li>
-            <li className='Nav-list__item' onClick={()=> setShowMenuList(!showMenuList)} >Oferta
-                {showMenuList ? <OffersList
-                    closeMenuList={()=> {
-                    setShowMenuList(false);}
-                }
-                /> : null}
-
-                    
-
-                {/* <ul className='Nav-list-offers__list List-style'>
-                    <li>
+    <div 
+        className= 'Nav-list__bg'
+        // className= { props.isOpen ? 'Nav-list__bg Visible' : 'Nav-list__bg Hidden'}
+         >
+            <ul className='Nav-list__list List-style'>
+                <li className='Nav-list__item'>
                     <Link
-                            to="/installations" 
-                            className='Nav-list-offers__item Link-style'
-                            onClick={props.closeMenu}
+                        to="/" 
+                        className='Nav-list__link Link-style'
+                        onClick={props.closeMenu}
                     >
-                            Instalacje
-                        </Link> 
-                    </li>
-                    <li>
+                        Home
+                    </Link>
+                </li>
+                <li 
+                    className= 'Nav-list__item'
+                    // className={props.isOpen ? 'Nav-list__item Visible' : 'Nav-list__item Hidden'}
+                    onClick={()=> setShowMenuList(!showMenuList)} >Oferta
+                        {showMenuList ? <OffersList
+                            closeMenuList={()=> {
+                            setShowMenuList(false);}
+                        }
+                        /> : null}
+
+                        
+
+                    {/* <ul className='Nav-list-offers__list List-style'>
+                        <li>
                         <Link
-                            to="/boilerRoom" 
-                            className='Nav-list-offers__item Link-style'
-                            onClick={props.closeMenu}
+                                to="/installations" 
+                                className='Nav-list-offers__item Link-style'
+                                onClick={props.closeMenu}
                         >
-                            Kotłownia
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/connections" 
-                            className='Nav-list-offers__item Link-style'
-                            onClick={props.closeMenu}
-                        >
-                            Przyłącza WOD-KAN
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to="/res" 
-                            className='Nav-list-offers__item Link-style'
-                            onClick={props.closeMenu}
-                        >
-                            Nowoczesne systemy grzewcze
-                        </Link>   
-                    </li>
-                </ul> */}
-            </li>
-            
-            <li className='Nav-list__item'>
-                <Link
-                    to="/contact"
-                    className='Nav-list__link Link-style'
-                    onClick={props.closeMenu}
-                >
-                    Kontakt
-                </Link>
-            </li>
-        </ul>
+                                Instalacje
+                            </Link> 
+                        </li>
+                        <li>
+                            <Link
+                                to="/boilerRoom" 
+                                className='Nav-list-offers__item Link-style'
+                                onClick={props.closeMenu}
+                            >
+                                Kotłownia
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/connections" 
+                                className='Nav-list-offers__item Link-style'
+                                onClick={props.closeMenu}
+                            >
+                                Przyłącza WOD-KAN
+                            </Link>
+                        </li>
+                        <li>
+                            <Link
+                                to="/res" 
+                                className='Nav-list-offers__item Link-style'
+                                onClick={props.closeMenu}
+                            >
+                                Nowoczesne systemy grzewcze
+                            </Link>   
+                        </li>
+                    </ul> */}
+                </li>
+                
+                <li className='Nav-list__item'>
+                    <Link
+                        to="/contact"
+                        className='Nav-list__link Link-style'
+                        onClick={props.closeMenu}
+                    >
+                        Kontakt
+                    </Link>
+                </li>
+            </ul>
     </div>
     
 

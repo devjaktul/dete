@@ -19,7 +19,11 @@ const Footer = () => (
                     <p
                         className='Footer__copyright-text'
                     >
-                        Zakład usługowy "DETE" Dionizy Turek, All rights reserved
+                        Zakład usługowy "DETE" Dionizy Turek,
+                        <p className='Footer__copyright-text--next-line'
+                        >
+                            All rights reserved
+                        </p>
                     </p>
                 </li>
                 <FooterButton/>

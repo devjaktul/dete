@@ -17,7 +17,8 @@ const items = [
     {
         id: 3,
         icon: faMapMarkedAlt,
-        text: "ul. Tadeusza Kościuszki 71 42-233 Mykanów",
+        text: "ul. Tadeusza Kościuszki",
+        textNextLine: "71 42-233 Mykanów",
     },
 ];
 
@@ -31,10 +32,16 @@ const Item = (props) =>
             className='Contact__text'
         >
             {props.text}
+            <p
+            className='Contact__text--next-line'
+        >
+            {props.textNextLine}
         </p>
+        </p>
+        
     </li>
 
-const ItemList = items.map(item => <Item key = {item.id} icon = {item.icon} text = {item.text} />)
+const ItemList = items.map(item => <Item key = {item.id} icon = {item.icon} text = {item.text} textNextLine = {item.textNextLine} />)
 
 const Contact = () => (
     <>

@@ -1,6 +1,11 @@
 .Footer {
     padding: 5px 0;
-    background-color: rgb(236, 231, 231);
+    background-color: #a8d0e6;
+    color: #24305e;
+
+    @include mq(tablet) {
+        padding: 10px 0;
+    }
 
     &__list {
         display: flex;
@@ -8,26 +13,83 @@
     }
 
     &__copyright {
-        flex-basis: 80%;
+        flex-basis: 85%;
         display: flex;
 
         &-icon {
             flex-basis: 10%;
             font-size: 1.3rem;
+            padding-left: 5px;
+
+            @include mq(smartphone) {
+                font-size: 1.5rem;
+                padding-left: 10px;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 1.6rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 1.8rem;
+                padding-left: 30px;
+            }
         }
 
         &-text {
             flex-basis: 90%;
+            display: flex;
+            flex-direction: column;
             font-size: 1.3rem;
+
+            &--next-line {
+                font-size: 1.3rem;
+
+                @include mq(smartphone) {
+                    font-size: 1.5rem;
+                }
+
+                @include mq(smartphone-large) {
+                    font-size: 1.6rem;
+                }
+
+                @include mq(tablet) {
+                    font-size: 1.8rem;
+                }
+            }
+
+            @include mq(smartphone) {
+                font-size: 1.5rem;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 1.6rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 1.8rem;
+            }
         }
     }
 
     &__button {
-        flex-basis: 20%;
+        flex-basis: 15%;
 
         &-icon {
             font-size: 6rem;
-            color: rgb(90, 88, 88);
+            color: #f8e9a1;
+
+            @include mq(smartphone) {
+                font-size: 6rem;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 7rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 8rem;
+            }
         }
     }
 }

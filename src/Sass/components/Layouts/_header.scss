@@ -1,21 +1,61 @@
 .Header {
     display: flex;
-    // width: 100vw;
-    height: 10vh;
-    background-color: rgb(150, 236, 150);
+    width: 100vw;
+    height: 12vh;
+    background-color: #a8d0e6;
+    color: #24305e;
 
     &__name {
         flex-basis: 80%;
-        padding: 0 2%;
+        display: flex;
+        flex-direction: column;
         margin: auto 0;
         text-align: center;
         text-transform: uppercase;
-        font-size: 2.2rem;
-        // background-color: rgb(139, 139, 209);
+        background: linear-gradient(0.25turn, #405ccc, #24305e);
+        background-clip: text;
+        color: transparent;
+
+        @include mq(smartphone) {
+            flex-basis: 70%;
+        }
+
+        &--text {
+            font-size: 2rem;
+            font-family: 'Rowdies', cursive;
+
+            @include mq(smartphone) {
+                font-size: 2.3rem;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 2.6rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 3rem;
+            }
+        }
+
+        &--next-line {
+            font-size: 2rem;
+            font-family: 'Rowdies', cursive;
+
+            @include mq(smartphone) {
+                font-size: 2.3rem;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 2.6rem;
+            }
+
+            @include mq(tablet) {
+                font-size: 3rem;
+            }
+        }
     }
 
     &__navigation {
         position: relative;
-        flex-basis: 20%;
     }
 }

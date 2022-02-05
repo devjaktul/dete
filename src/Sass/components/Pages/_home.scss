@@ -4,6 +4,18 @@
     &__text-about-me {
         line-height: 1.5;
         font-size: 2rem;
-        // text-align: justify;
+        text-indent: 30px;
+
+        @include mq(smartphone) {
+            font-size: 2.2rem;
+        }
+
+        @include mq(smartphone-large) {
+            font-size: 2.5rem;
+        }
+
+        @include mq(tablet) {
+            font-size: 2.8rem;
+        }
     }
 }
