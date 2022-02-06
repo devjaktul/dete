@@ -5,12 +5,13 @@
         position: fixed;
         top: 15px;
         right: 20px;
-        z-index: 1;
-        color: #f8e9a1;
+        z-index: 3;
+        // color: #f8e9a1;
 
-        // color: #f3d250;
+        color: #f3d250;
 
         // background-color: rgb(223, 142, 45);
+
         @include mq(smartphone-large) {
             top: 25px;
             right: 35px;

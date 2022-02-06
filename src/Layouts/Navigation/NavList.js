@@ -23,17 +23,24 @@ return (
                         Home
                     </Link>
                 </li>
-                <li 
-                    className= 'Nav-list__item'
-                    // className={props.isOpen ? 'Nav-list__item Visible' : 'Nav-list__item Hidden'}
+                <li className='Nav-list__item--mobile'>
+                    <Link
+                        to="/offers" 
+                        className='Nav-list__link Link-style'
+                        onClick={props.closeMenu}
+                    >
+                        Oferta
+                    </Link>
+                </li>
+                 <li 
+                    className= 'Nav-list__item Display-none'
+                //    className={props.isOpen ? 'Nav-list__item Visible' : 'Nav-list__item Hidden'}
                     onClick={()=> setShowMenuList(!showMenuList)} >Oferta
                         {showMenuList ? <OffersList
                             closeMenuList={()=> {
                             setShowMenuList(false);}
                         }
-                        /> : null}
-
-                        
+                    /> : null}    
 
                     {/* <ul className='Nav-list-offers__list List-style'>
                         <li>
@@ -73,7 +80,7 @@ return (
                             </Link>   
                         </li>
                     </ul> */}
-                </li>
+                </li> 
                 
                 <li className='Nav-list__item'>
                     <Link

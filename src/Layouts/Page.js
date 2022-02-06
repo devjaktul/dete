@@ -7,10 +7,7 @@ import BoilerRoom from '../Pages/BoilerRoom';
 import Connections from '../Pages/Connections';
 import Res from '../Pages/Res';
 import Contact from '../Pages/Contact';
-
-
-
-
+import Container from './Container';
 
 const Page = () => (
     
@@ -18,6 +15,7 @@ const Page = () => (
     <section className='Page__activity'>
         <Routes>
             <Route path="/" element={<Home/>} />
+            <Route path="/offers" element={<Container/>} />
             <Route path="/installations" element={<Installations/>} />
             <Route path="/boilerRoom" element={<BoilerRoom/>} />
             <Route path="/connections" element={<Connections/>} />

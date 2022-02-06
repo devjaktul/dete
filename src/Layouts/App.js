@@ -5,12 +5,12 @@ import Header from './Header';
 import Page from './Page';
 import Footer from './Footer/Footer';
 
-// import React, {Component} from 'react';
 
 
 function App() {
   return (
     <Router>
+      
     <div className="App">
       <header className="Header">
       {<Header/>}
