@@ -17,8 +17,8 @@ const items = [
     {
         id: 3,
         icon: faMapMarkedAlt,
-        text: "ul. Tadeusza Kościuszki",
-        textNextLine: "71 42-233 Mykanów",
+        text: "ul. Tadeusza Kościuszki 71",
+        textNextLine: "42-233 Mykanów",
     },
 ];
 

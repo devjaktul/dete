@@ -3,10 +3,18 @@
     background-color: #a8d0e6;
     color: #24305e;
 
+    @include mq-landscape(smartphone-large) {
+        height: 20vh;
+    }
+
     &__list {
         display: flex;
         height: 12vh;
         align-items: center;
+
+        @include mq-landscape(smartphone-large) {
+            height: 20vh;
+        }
     }
 
     &__copyright {
@@ -25,6 +33,10 @@
 
             @include mq(smartphone-large) {
                 font-size: 1.6rem;
+            }
+
+            @include mq-landscape(smartphone-large) {
+                padding-left: 25px;
             }
 
             @include mq(tablet) {
@@ -72,6 +84,10 @@
     &__button {
         flex-basis: 20%;
         height: 12vh;
+
+        @include mq-landscape(smartphone-large) {
+            height: 20vh;
+        }
     }
 }
 
@@ -81,6 +97,7 @@
         position: relative;
         width: 100%;
         height: 100%;
+        // background-color: red;
     }
 
     &__icon {
@@ -99,7 +116,15 @@
             font-size: 7rem;
         }
 
+        @include mq-landscape(smartphone-large) {
+            bottom: 7px;
+            right: 30px;
+            font-size: 5.8rem;
+        }
+
         @include mq(tablet) {
+            bottom: 25px;
+            right: 30px;
             font-size: 8rem;
         }
     }

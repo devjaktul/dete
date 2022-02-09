@@ -14,6 +14,10 @@
             font-size: 2.5rem;
         }
 
+        @include mq-landscape(smartphone-large) {
+            font-size: 2.2rem;
+        }
+
         @include mq(tablet) {
             font-size: 2.8rem;
         }

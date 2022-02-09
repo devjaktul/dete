@@ -5,6 +5,10 @@
     background-color: #a8d0e6;
     color: #24305e;
 
+    @include mq-landscape(smartphone-large) {
+        height: 20vh;
+    }
+
 
     &__name {
         flex-basis: 80%;
@@ -18,7 +22,7 @@
         // color: transparent;
 
         @include mq(smartphone) {
-            flex-basis: 70%;
+            // flex-basis: 70%;
         }
 
     }
@@ -34,6 +38,10 @@
         background: linear-gradient(0.25turn, #405ccc, #24305e);
         background-clip: text;
         color: transparent;
+
+        @include mq-landscape(smartphone-large) {
+            height: 20vh;
+        }
 
         &--text {
             // align-items: center;

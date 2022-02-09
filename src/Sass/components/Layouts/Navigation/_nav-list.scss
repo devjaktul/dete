@@ -19,29 +19,42 @@
         background-color: #374785;
         line-height: 2.5;
         z-index: 1;
+
+        @include mq(tablet) {
+            left: auto;
+            right: 0;
+            width: 70vw;
+        }
     }
 
     &__item {
         position: relative;
         top: 20%;
         text-align: center;
-        font-size: 2.5rem;
-        font-weight: 700;
-        color: #a8d0e6;
 
         &--mobile {
             position: relative;
             top: 20%;
             text-align: center;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: #a8d0e6;
         }
     }
 
     &__link {
         font-size: 2.5rem;
+        font-weight: 700;
         color: #a8d0e6;
+
+        @include mq(smartphone) {
+            font-size: 2.8rem;
+        }
+
+        @include mq(smartphone-large) {
+            font-size: 3rem;
+        }
+
+        @include mq(tablet) {
+            font-size: 4rem;
+        }
     }
 
     &-offers {

@@ -1,9 +1,13 @@
 .Contact {
     &__list {
         margin: 15px 0;
-        padding: 0 5%;
+        // padding: 0 5%;
 
         @include mq(smartphone) {
+            padding: 0 5%;
+        }
+
+        @include mq(smartphone-large) {
             padding: 0 10%;
         }
     }
@@ -20,8 +24,12 @@
         margin-right: 5px;
         text-align: center;
 
-        @include mq(smartphone-large) {
+        @include mq(smartphone) {
             font-size: 2.2rem;
+        }
+
+        @include mq(smartphone-large) {
+            font-size: 2.4rem;
         }
     }
 
@@ -30,18 +38,28 @@
         display: flex;
         flex-direction: column;
         font-size: 2rem;
-        text-align: left;
+        // text-align: left;
+
+        @include mq(smartphone) {
+            flex-basis: 80%;
+            font-size: 2.2rem;
+        }
 
         @include mq(smartphone-large) {
-            font-size: 2.2rem;
+            flex-basis: 75%;
+            font-size: 2.4rem;
         }
 
         &--next-line {
             font-size: 2rem;
             text-align: center;
 
-            @include mq(smartphone-large) {
+            @include mq(smartphone) {
                 font-size: 2.2rem;
+            }
+
+            @include mq(smartphone-large) {
+                font-size: 2.4rem;
             }
         }
     }
