@@ -6,21 +6,20 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright } from '@fortawesome/free-solid-svg-icons';
 
 
-
 const Footer = () => (
     <>
         <div className='Footer'>
             <ul className='Footer__list List-style'>
-                <li className='Footer__copyright'>
+                <li className='Footer__copyright List-style'>
                     <FontAwesomeIcon
-                        className='Footer__copyright-icon'
+                        className='Copyright__icon'
                         icon = {faCopyright}
                     />
                     <p
-                        className='Footer__copyright-text'
+                        className='Copyright__text'
                     >
                         Zakład usługowy "DETE" Dionizy Turek,
-                        <p className='Footer__copyright-text--next-line'
+                        <p className='Copyright__text--next-line'
                         >
                             All rights reserved
                         </p>

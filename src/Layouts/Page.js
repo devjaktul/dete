@@ -8,10 +8,13 @@ import Connections from '../Pages/Connections';
 import Res from '../Pages/Res';
 import Contact from '../Pages/Contact';
 import Container from './Container';
+import Images from './Images';
+
 
 const Page = () => (
     
    <>
+        <Images/>
     <section className='Page__activity'>
         <Routes>
             <Route path="/" element={<Home/>} />

@@ -45,7 +45,7 @@ const ItemList = items.map(item => <Item key = {item.id} icon = {item.icon} text
 
 const Contact = () => (
     <>
-    <h2 className='Page__name'>Kontakt</h2>
+    <h2 className='Contact__name'>Kontakt</h2>
     <address className='Contact__page'>
         <ul className='Contact__list List-style'>
             {ItemList}

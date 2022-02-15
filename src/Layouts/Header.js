@@ -2,6 +2,7 @@ import React from 'react';
 import MobileNav from './Navigation/MobileNav';
 // import Navigation from './Navigation';
 import { Link } from 'react-router-dom';
+import DesktopNav from './Navigation/DesktopNav';
 
 
 const Header = () => (
@@ -20,6 +21,7 @@ const Header = () => (
         
         <nav className='Header__navigation'>
             {<MobileNav/>}
+            {<DesktopNav/>}
         </nav>
     </div>
     </>

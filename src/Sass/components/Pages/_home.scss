@@ -21,5 +21,10 @@
         @include mq(tablet) {
             font-size: 2.8rem;
         }
+
+        @include mq(tablet-large) {
+            font-size: 3.1rem;
+            line-height: 1.6;
+        }
     }
 }
