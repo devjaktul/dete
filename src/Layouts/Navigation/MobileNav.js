@@ -16,7 +16,7 @@ const MobileNav = () =>{
             <FontAwesomeIcon
                 icon = {icons}
                 // className='Mobile-nav__button'
-                className={isOpen ? 'Mobile-nav__button redFont' : 'Mobile-nav__button' }
+                className={isOpen ? 'Mobile-nav__button clouse-icon' : 'Mobile-nav__button' }
                 onClick={() => {
                     setShowMenu(!showMenu);
                     setIcons(showMenu ? faBars : faTimes);

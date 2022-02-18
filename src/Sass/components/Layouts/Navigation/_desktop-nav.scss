@@ -26,10 +26,10 @@
 
     &__link {
         padding: 5px;
-        background-color: #f3d250;
+        background-color: $icon-color;
         border-radius: 5px;
         box-shadow: 1px 1px 1px grey;
-        color: #24305e;
+        color: $button-font-color;
         text-align: center;
         font-size: 3rem;
         background-position: center;
@@ -39,17 +39,22 @@
             font-size: 1.6rem;
         }
 
-        // &:hover {
-        //     background: #f9e9a8 radial-gradient(circle, transparent 1%, #f9e9a8 1%) center/15000%;
-        // }
+        @media(min-width: 1366px) {
+            &:hover {
+                background: $icon-hover-color radial-gradient(circle, transparent 1%, $icon-hover-color 1%) center/15000%;
+            }
+        }
+
+
 
         &:active {
-            background-color: #fefbf1;
+            background-color: $icon-active-color;
             background-size: 100%;
             transition: background 0s;
         }
     }
 
+    // Zastanowić się co z tym...
     &-offers {
         &__list {
             display: none;

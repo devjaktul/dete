@@ -1,6 +1,6 @@
 .Page {
     flex-grow: 1;
-    background-color: #f4f4f4;
+    background-color: $page-color;
 
     &__activity {
         padding: 5% 10%;
@@ -23,7 +23,6 @@
             }
         }
     }
-
 
     &__name {
         font-size: 2.2rem;

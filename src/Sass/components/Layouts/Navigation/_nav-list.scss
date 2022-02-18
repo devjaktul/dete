@@ -7,7 +7,7 @@
         width: 100vw;
         height: 100vh;
         z-index: 2;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: $nav-list-bg-color;
     }
 
     &__list {
@@ -16,7 +16,7 @@
         left: 0;
         width: 80vw;
         height: 100vh;
-        background-color: #374785;
+        background-color: $nav-list-color;
         line-height: 2.5;
         z-index: 1;
 
@@ -42,7 +42,7 @@
     &__link {
         font-size: 2.5rem;
         font-weight: 700;
-        color: #a8d0e6;
+        color: $nav-list-font-color;
 
         @include mq(smartphone) {
             font-size: 2.8rem;
@@ -57,6 +57,7 @@
         }
     }
 
+    // Co z tym...
     &-offers {
 
         &__list {

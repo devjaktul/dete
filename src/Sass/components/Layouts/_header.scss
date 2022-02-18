@@ -2,8 +2,8 @@
     width: 100vw;
     height: $smartphone-height;
     position: relative;
-    background-color: #a8d0e6;
-    color: #24305e;
+    background-color: $header-footer-color;
+    // color: $font-color;
 
     @include mq(tablet) {
         height: $tablet-height;
@@ -30,7 +30,7 @@
         flex-direction: column;
         text-align: center;
         text-transform: uppercase;
-        background: linear-gradient(0.25turn, #405ccc, #24305e);
+        background: linear-gradient(0.25turn, #2e65cd, $font-color);
         background-clip: text;
         color: transparent;
 

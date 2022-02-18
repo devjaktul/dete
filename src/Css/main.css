@@ -14,7 +14,7 @@ html {
   flex-direction: column;
   width: 100vw;
   height: 100vh;
-  color: #374785;
+  color: #25315F;
 }
 @media (min-width: 1921px) {
   .App {
@@ -40,8 +40,7 @@ html {
   width: 100vw;
   height: 80px;
   position: relative;
-  background-color: #a8d0e6;
-  color: #24305e;
+  background-color: #C8DBFB;
 }
 @media (min-width:800px) {
   .Header {
@@ -70,7 +69,7 @@ html {
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
-  background: linear-gradient(0.25turn, #405ccc, #24305e);
+  background: linear-gradient(0.25turn, #2e65cd, #25315F);
   background-clip: text;
   color: transparent;
 }
@@ -130,7 +129,7 @@ html {
   transform: translateY(-50%);
   z-index: 3;
   font-size: 5.5rem;
-  color: #f3d250;
+  color: #3175ed;
 }
 @media (min-width: 1024px) {
   .Mobile-nav__button {
@@ -159,10 +158,10 @@ html {
   transition: 0.2s;
 }
 
-.redFont {
-  color: #f76c6c;
+.clouse-icon {
+  color: #fff;
 }
-.redFont:hover {
+.clouse-icon:hover {
   transition: 0.2s;
 }
 
@@ -173,7 +172,7 @@ html {
   width: 100vw;
   height: 100vh;
   z-index: 2;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(49, 117, 237, 0.6);
 }
 .Nav-list__list {
   position: fixed;
@@ -181,7 +180,7 @@ html {
   left: 0;
   width: 80vw;
   height: 100vh;
-  background-color: #374785;
+  background-color: #3175ed;
   line-height: 2.5;
   z-index: 1;
 }
@@ -205,7 +204,7 @@ html {
 .Nav-list__link {
   font-size: 2.5rem;
   font-weight: 700;
-  color: #a8d0e6;
+  color: #fff;
 }
 @media (min-width: 460px) {
   .Nav-list__link {
@@ -263,10 +262,10 @@ html {
 }
 .Desktop-nav-list__link {
   padding: 5px;
-  background-color: #f3d250;
+  background-color: #3175ed;
   border-radius: 5px;
   box-shadow: 1px 1px 1px grey;
-  color: #24305e;
+  color: #fff;
   text-align: center;
   font-size: 3rem;
   background-position: center;
@@ -277,8 +276,13 @@ html {
     font-size: 1.6rem;
   }
 }
+@media (min-width: 1366px) {
+  .Desktop-nav-list__link:hover {
+    background: #96b9f6 radial-gradient(circle, transparent 1%, #96b9f6 1%) center/15000%;
+  }
+}
 .Desktop-nav-list__link:active {
-  background-color: #fefbf1;
+  background-color: #d1e0fb;
   background-size: 100%;
   transition: background 0s;
 }
@@ -327,7 +331,7 @@ html {
 
 .Page {
   flex-grow: 1;
-  background-color: #f4f4f4;
+  background-color: #fff;
 }
 .Page__activity {
   padding: 5% 10%;
@@ -632,8 +636,7 @@ html {
 
 .Footer {
   height: 80px;
-  background-color: #a8d0e6;
-  color: #24305e;
+  background-color: #C8DBFB;
 }
 @media (min-width:800px) {
   .Footer {
@@ -809,7 +812,12 @@ html {
   right: 20px;
   transform: translateY(-50%);
   font-size: 5.5rem;
-  color: #f3d250;
+  color: #3175ed;
+  transition: 0.8s;
+}
+.Button__icon:active {
+  color: #d1e0fb;
+  transition: 0s;
 }
 @media (min-width: 460px) {
   .Button__icon {

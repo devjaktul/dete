@@ -7,7 +7,7 @@
         transform: translateY(-50%);
         z-index: 3;
         font-size: 5.5rem;
-        color: #f3d250;
+        color: $icon-color;
 
         @include mq(tablet-large) {
             display: none;
@@ -34,8 +34,8 @@
     }
 }
 
-.redFont {
-    color: #f76c6c;
+.clouse-icon {
+    color: $icon-clouse-color;
 
     &:hover {
         transition: .2s;

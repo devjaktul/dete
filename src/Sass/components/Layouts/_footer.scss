@@ -1,7 +1,7 @@
 .Footer {
     height: $smartphone-height;
-    background-color: #a8d0e6;
-    color: #24305e;
+    background-color: $header-footer-color;
+    // color: #24305e;
 
     @include mq(tablet) {
         height: $tablet-height;
@@ -160,6 +160,7 @@
         position: relative;
         width: 100%;
         height: 100%;
+
     }
 
     &__icon {
@@ -168,7 +169,13 @@
         right: 20px;
         transform: translateY(-50%);
         font-size: 5.5rem;
-        color: #f3d250;
+        color: $icon-color;
+        transition: 0.8s;
+
+        &:active {
+            color: $icon-active-color;
+            transition: 0s;
+        }
 
         @include mq(smartphone) {
             font-size: 6rem;
