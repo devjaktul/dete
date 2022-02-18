@@ -4,6 +4,9 @@
     width: 100vw;
     height: 100vh;
     color: #374785;
-    // background-color: #A0AECD;
-}
 
+    @media (min-width: 1921px) {
+        width: 1920px;
+        margin: auto;
+    }
+}

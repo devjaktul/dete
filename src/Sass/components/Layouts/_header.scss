@@ -1,31 +1,32 @@
 .Header {
-    display: flex;
     width: 100vw;
-    height: 12vh;
+    height: $smartphone-height;
+    position: relative;
     background-color: #a8d0e6;
     color: #24305e;
 
-    @include mq-landscape(smartphone-large) {
-        height: 20vh;
+    @include mq(tablet) {
+        height: $tablet-height;
     }
 
-    @include mq(tablet-large) {
-        height: 7vh;
+    @include mq(desktop-small) {
+        height: $desktop-height;
     }
 
+    @media (min-width: 1921px) {
+        margin: auto;
+        width: 1920px;
+    }
 
     &__name {
-        flex-basis: 80%;
-
-        @include mq(tablet-large) {
-            flex-basis: 40%;
-        }
-
+        position: absolute;
+        top: 50%;
+        left: 20px;
+        transform: translateY(-50%);
     }
 
     &__link {
         display: flex;
-        height: 12vh;
         flex-direction: column;
         text-align: center;
         text-transform: uppercase;
@@ -33,16 +34,8 @@
         background-clip: text;
         color: transparent;
 
-        @include mq-landscape(smartphone-large) {
-            height: 20vh;
-        }
-
-        @include mq(tablet-large) {
-            height: 7vh;
-        }
-
         &--text {
-            margin: auto 0 0 0;
+            align-content: center;
             font-size: 2rem;
             font-family: 'Rowdies', cursive;
 
@@ -56,11 +49,14 @@
 
             @include mq(tablet) {
                 font-size: 3rem;
+            }
+
+            @include mq(desktop-small) {
+                font-size: 1.8rem;
             }
         }
 
         &--next-line {
-            margin: 0 0 auto 0;
             font-size: 2rem;
             font-family: 'Rowdies', cursive;
 
@@ -74,16 +70,26 @@
 
             @include mq(tablet) {
                 font-size: 3rem;
+            }
+
+            @include mq(desktop-small) {
+                font-size: 1.8rem;
             }
         }
     }
 
     &__navigation {
-        flex-basis: 20%;
-        position: relative;
+        // flex-basis: 20%;
+        // position: absolute;
+        // top: 0;
+        // right: 0;
+        // width: 20%;
+        // height: 100%;
+        // background-color: red;
+
 
         @include mq(tablet-large) {
-            flex-basis: 60%;
+            // flex-basis: 60%;
         }
     }
 }

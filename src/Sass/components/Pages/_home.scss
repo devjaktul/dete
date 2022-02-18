@@ -1,5 +1,4 @@
 .Home {
-    background-color: rgb(123, 123, 224);
 
     &__text-about-me {
         line-height: 1.5;
@@ -25,6 +24,19 @@
         @include mq(tablet-large) {
             font-size: 3.1rem;
             line-height: 1.6;
+        }
+
+        @include mq(desktop-small) {
+            padding: 0 20px;
+            font-size: 2rem;
+        }
+
+        @include mq(desktop-medium) {
+            padding: 0 50px;
+        }
+
+        @include mq(desktop-large) {
+            padding: 0 100px;
         }
     }
 }

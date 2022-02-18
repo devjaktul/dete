@@ -1,34 +1,30 @@
 .Mobile-nav {
 
     &__button {
-        font-size: 5.5rem;
         position: fixed;
-        top: 15px;
+        top: $smartphone-height / 2;
         right: 20px;
+        transform: translateY(-50%);
         z-index: 3;
-        // color: #f8e9a1;
+        font-size: 5.5rem;
         color: #f3d250;
-        // background-color: rgb(223, 142, 45);
-
-        // @media(min-width: 1024px) {
-        //     display: none;
-        // }
 
         @include mq(tablet-large) {
             display: none;
         }
 
+        @include mq(smartphone) {
+            right: 25px;
+        }
+
         @include mq(smartphone-large) {
-            top: 25px;
-            right: 35px;
+            right: 30px;
             font-size: 6rem;
         }
 
-        @include mq-landscape(smartphone-large) {
-            top: 10px;
-        }
-
         @include mq(tablet) {
+            top: $tablet-height / 2;
+            right: 35px;
             font-size: 7rem;
         }
 
@@ -40,7 +36,6 @@
 
 .redFont {
     color: #f76c6c;
-    // color: #f78888;
 
     &:hover {
         transition: .2s;

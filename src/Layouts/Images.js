@@ -22,7 +22,16 @@ const Images = () => {
                         path="/"
                         element={
                             <img
-                                src={img1}
+                                src={img3}
+                                alt="ksjdh"
+                                className='Images__photo'/>
+                                } 
+                    />
+                    <Route
+                        path="/offers"
+                        element={
+                            <img
+                                src={img2}
                                 alt="ksjdh"
                                 className='Images__photo'/>
                                 } 
@@ -49,7 +58,7 @@ const Images = () => {
                         path="/connections"
                         element={
                             <img
-                                src={img2}
+                                src={img1}
                                 alt="ksjdh"
                                 className='Images__photo'/>
                                 } 

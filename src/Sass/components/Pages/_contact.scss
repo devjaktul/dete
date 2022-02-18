@@ -18,11 +18,13 @@
         @include mq(tablet) {
             font-size: 3.4rem;
         }
+
+        @include mq(desktop-small) {
+            font-size: 2.4rem;
+        }
     }
 
     &__list {
-        // margin: 15px 0;
-        // padding: 0 5%;
 
         @include mq(smartphone) {
             padding: 0 5%;
@@ -34,6 +36,10 @@
 
         @include mq(tablet) {
             padding: 0 5%;
+        }
+
+        @include mq(desktop-small) {
+            padding: 0;
         }
     }
 
@@ -64,33 +70,37 @@
         @include mq(tablet-large) {
             font-size: 3rem;
         }
+
+        @include mq(desktop-small) {
+            flex-basis: 5%;
+            margin-right: 0;
+            font-size: 2.2rem;
+        }
     }
 
     &__text {
-        // flex-basis: 90%;
         display: flex;
         flex-direction: column;
         font-size: 2rem;
-        // text-align: left;
 
         @include mq(smartphone) {
-            // flex-basis: 80%;
             font-size: 2.2rem;
         }
 
         @include mq(smartphone-large) {
-            // flex-basis: 75%;
             font-size: 2.4rem;
         }
 
         @include mq(tablet) {
-            // flex-basis: 60%;
             font-size: 2.8rem;
         }
 
         @include mq(tablet-large) {
-            // flex-basis: 50%;
             font-size: 3rem;
+        }
+
+        @include mq(desktop-small) {
+            font-size: 2.2rem;
         }
 
         &--next-line {
@@ -112,7 +122,10 @@
             @include mq(tablet-large) {
                 font-size: 3rem;
             }
+
+            @include mq(desktop-small) {
+                font-size: 2.2rem;
+            }
         }
     }
-
 }

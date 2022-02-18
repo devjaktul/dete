@@ -51,10 +51,12 @@ const ItemList = items.map(item => <Item key = {item.id} icon = {item.icon} text
 
 const BoilerRoom = () => (
     <>
+    <div className='Page__container'>
     <h2 className='Page__name'>Wykonawstwo i modernizacja kotłowni</h2>
     <ul className='Offers__list List-style'>
         {ItemList}
     </ul>
+    </div>
     </>
 )
 

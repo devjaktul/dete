@@ -5,3 +5,9 @@ $breakpoints: (smartphone: '(min-width: 460px)',
     desktop-small: '(min-width: 1280px)',
     desktop-medium: '(min-width: 1600px)',
     desktop-large: '(min-width: 1900px)', );
+
+
+// Heihgt Header and Footer components
+$smartphone-height: 80px;
+$tablet-height: 100px;
+$desktop-height: 60px;

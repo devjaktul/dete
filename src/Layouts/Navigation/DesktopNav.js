@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+
 const DesktopNav = () => {
 
 return (
@@ -15,13 +16,15 @@ return (
                     </Link>
                 </li>
                 <li className='Desktop-nav-list__item'>
+                
+                
                     <Link
                         to="/offers" 
                         className='Desktop-nav-list__link Link-style'
                     >
                         Oferta
                     </Link>
-                        <ul className='Desktop-nav-list-offers__list List-style'>
+                        {/* <ul className='Desktop-nav-list-offers__list List-style'>
                             <li className='Desktop-nav-list-offers__item'>
                             <Link
                                     to="/installations" 
@@ -54,7 +57,7 @@ return (
                                     Nowoczesne systemy grzewcze
                                 </Link>   
                             </li>
-                        </ul>
+                        </ul> */}
             </li>
                 
                 <li className='Desktop-nav-list__item'>
