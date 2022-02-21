@@ -3,13 +3,13 @@
     background-color: $page-color;
 
     &__activity {
-        padding: 5% 10%;
+        // padding: 5% 10%;
 
         @include mq(desktop-small) {
             display: flex;
             flex-wrap: wrap;
             justify-content: space-around;
-            padding: 40px 50px;
+            // padding: 10px 50px;
             text-align: justify;
         }
     }

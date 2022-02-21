@@ -12,8 +12,7 @@ html {
 .App {
   display: flex;
   flex-direction: column;
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   color: #25315F;
 }
 @media (min-width: 1921px) {
@@ -37,7 +36,7 @@ html {
 }
 
 .Header {
-  width: 100vw;
+  width: 100%;
   height: 80px;
   position: relative;
   background-color: #C8DBFB;
@@ -300,7 +299,7 @@ html {
 
 .Images__container {
   position: relative;
-  width: 100vw;
+  width: 100%;
   height: 25vh;
   overflow: hidden;
 }
@@ -320,28 +319,40 @@ html {
     width: 1920px;
   }
 }
+.Images__bgc {
+  background-color: #1A5482;
+}
 .Images__photo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.Image-others {
   min-width: 100%;
   min-height: 100%;
+}
+
+.Image-contact {
+  width: auto;
+  height: 100%;
+}
+@media (min-width: 1280px) {
+  .Image-contact {
+    height: 60%;
+  }
 }
 
 .Page {
   flex-grow: 1;
   background-color: #fff;
 }
-.Page__activity {
-  padding: 5% 10%;
-}
 @media (min-width: 1280px) {
   .Page__activity {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 40px 50px;
     text-align: justify;
   }
 }
@@ -389,17 +400,20 @@ html {
 }
 
 .Home__text-about-me {
+  padding: 30px;
   line-height: 1.5;
   font-size: 2rem;
   text-indent: 30px;
 }
 @media (min-width: 460px) {
   .Home__text-about-me {
+    padding: 30px 45px;
     font-size: 2.2rem;
   }
 }
 @media (min-width: 640px) {
   .Home__text-about-me {
+    padding: 35px 60px;
     font-size: 2.5rem;
   }
 }
@@ -410,29 +424,31 @@ html {
 }
 @media (min-width:800px) {
   .Home__text-about-me {
+    padding: 45px 65px;
     font-size: 2.8rem;
   }
 }
 @media (min-width: 1024px) {
   .Home__text-about-me {
+    padding: 50px 100px;
     font-size: 3.1rem;
     line-height: 1.6;
   }
 }
 @media (min-width: 1280px) {
   .Home__text-about-me {
-    padding: 0 20px;
-    font-size: 2rem;
+    padding: 35px 80px;
+    font-size: 1.6rem;
   }
 }
 @media (min-width: 1600px) {
   .Home__text-about-me {
-    padding: 0 50px;
+    padding: 35px 150px;
   }
 }
 @media (min-width: 1900px) {
   .Home__text-about-me {
-    padding: 0 100px;
+    padding: 40px 300px;
   }
 }
 
@@ -484,7 +500,7 @@ html {
 }
 @media (min-width: 1280px) {
   .Offers__text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 
@@ -513,7 +529,7 @@ html {
 }
 @media (min-width: 1280px) {
   .Contact__name {
-    font-size: 2.4rem;
+    font-size: 1.8rem;
   }
 }
 @media (min-width: 460px) {
@@ -533,7 +549,7 @@ html {
 }
 @media (min-width: 1280px) {
   .Contact__list {
-    padding: 0;
+    padding: 0 10px;
   }
 }
 .Contact__item {
@@ -571,7 +587,7 @@ html {
   .Contact__icon {
     flex-basis: 5%;
     margin-right: 0;
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 .Contact__text {
@@ -601,7 +617,7 @@ html {
 }
 @media (min-width: 1280px) {
   .Contact__text {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 .Contact__text--next-line {
@@ -630,7 +646,7 @@ html {
 }
 @media (min-width: 1280px) {
   .Contact__text--next-line {
-    font-size: 2.2rem;
+    font-size: 1.6rem;
   }
 }
 
