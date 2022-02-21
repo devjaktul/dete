@@ -1,17 +1,21 @@
 .Contact {
 
     &__name {
+        padding-left: 30px;
         font-size: 2.4rem;
 
         @include mq(smartphone) {
+            padding-left: 45px;
             font-size: 2.6rem;
         }
 
         @include mq(smartphone-large) {
+            padding-left: 75px;
             font-size: 2.8rem;
         }
 
         @include mq(tablet) {
+            padding-left: 100px;
             font-size: 3rem;
         }
 
@@ -20,26 +24,28 @@
         }
 
         @include mq(desktop-small) {
+            padding-left: 30px;
             font-size: 1.8rem;
         }
     }
 
     &__list {
+        padding-left: 40px;
 
         @include mq(smartphone) {
-            padding: 0 5%;
+            padding-left: 55px;
         }
 
         @include mq(smartphone-large) {
-            padding: 0 10%;
+            padding-left: 85px;
         }
 
         @include mq(tablet) {
-            padding: 0 5%;
+            padding-left: 110px;
         }
 
         @include mq(desktop-small) {
-            padding: 0 10px;
+            padding-left: 35px;
         }
     }
 

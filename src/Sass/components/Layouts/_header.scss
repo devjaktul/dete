@@ -3,7 +3,6 @@
     height: $smartphone-height;
     position: relative;
     background-color: $header-footer-color;
-    // color: $font-color;
 
     @include mq(tablet) {
         height: $tablet-height;
@@ -75,21 +74,6 @@
             @include mq(desktop-small) {
                 font-size: 1.8rem;
             }
-        }
-    }
-
-    &__navigation {
-        // flex-basis: 20%;
-        // position: absolute;
-        // top: 0;
-        // right: 0;
-        // width: 20%;
-        // height: 100%;
-        // background-color: red;
-
-
-        @include mq(tablet-large) {
-            // flex-basis: 60%;
         }
     }
 }

@@ -1,7 +1,20 @@
 .Offers {
     &__list {
-        line-height: 1.5;
         width: 100%;
+        padding: 10px 30px;
+        line-height: 1.5;
+
+        @include mq(smartphone) {
+            padding: 10px 35px;
+        }
+
+        @include mq(tablet) {
+            padding: 10px 50px;
+        }
+
+        @include mq(tablet) {
+            padding-left: 80px;
+        }
     }
 
     &__item {
@@ -9,12 +22,12 @@
         align-items: baseline;
         margin: 10px;
 
-        @include mq(smartphone-large) {
-            align-items: center;
+        &:nth-last-child(1) {
+            margin-bottom: 0;
         }
 
-        @include mq(desktop-small) {
-            margin: 10px 0 10px 20px;
+        @include mq(smartphone-large) {
+            align-items: center;
         }
     }
 

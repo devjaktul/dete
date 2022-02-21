@@ -6,12 +6,10 @@ import Res from "../Pages/Res";
 const Container = () => {
     return ( 
         <>
-            {/* <div className="Page__container"> */}
                 <Installations/>
                 <BoilerRoom/>
                 <Connections/>
                 <Res/>
-            {/* </div> */}
         </>
      );
 }

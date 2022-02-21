@@ -56,22 +56,6 @@
             font-size: 4rem;
         }
     }
-
-    // Co z tym...
-    &-offers {
-
-        &__list {
-            display: flex;
-            flex-direction: column;
-        }
-
-        &__link {
-            font-size: 2rem;
-            font-weight: 300;
-            padding: 0 5%;
-            color: #a8d0e6;
-        }
-    }
 }
 
 .Nav-lh {

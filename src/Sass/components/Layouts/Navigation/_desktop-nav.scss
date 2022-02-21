@@ -53,20 +53,4 @@
             transition: background 0s;
         }
     }
-
-    // Zastanowić się co z tym...
-    &-offers {
-        &__list {
-            display: none;
-            flex-direction: column;
-            position: absolute;
-            background-color: antiquewhite;
-        }
-
-        &__link {
-            padding: 5px;
-            font-size: 2rem;
-            color: black;
-        }
-    }
 }

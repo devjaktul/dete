@@ -11,7 +11,6 @@ return (
     <>
     <div 
         className= 'Nav-list__bg'
-        // className= { props.isOpen ? 'Nav-list__bg Visible' : 'Nav-list__bg Hidden'}
          >
             <ul className='Nav-list__list List-style'>
                 <li className='Nav-list__item'>
@@ -34,7 +33,6 @@ return (
                 </li>
                  <li 
                     className= 'Nav-list__item Display-none'
-                //    className={props.isOpen ? 'Nav-list__item Visible' : 'Nav-list__item Hidden'}
                     onClick={()=> setShowMenuList(!showMenuList)} >Oferta
                         {showMenuList ? <OffersList
                             closeMenuList={()=> {

@@ -1,7 +1,6 @@
 .Footer {
     height: $smartphone-height;
     background-color: $header-footer-color;
-    // color: #24305e;
 
     @include mq(tablet) {
         height: $tablet-height;
