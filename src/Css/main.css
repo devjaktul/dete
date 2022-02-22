@@ -68,11 +68,11 @@ html {
   flex-direction: column;
   text-align: center;
   text-transform: uppercase;
+}
+.Header__link--text {
   background: linear-gradient(0.25turn, #2e65cd, #25315F);
   background-clip: text;
   color: transparent;
-}
-.Header__link--text {
   align-content: center;
   font-size: 2rem;
   font-family: "Rowdies", cursive;
@@ -98,6 +98,9 @@ html {
   }
 }
 .Header__link--next-line {
+  background: linear-gradient(0.25turn, #2e65cd, #25315F);
+  background-clip: text;
+  color: transparent;
   font-size: 2rem;
   font-family: "Rowdies", cursive;
 }
